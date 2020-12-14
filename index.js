@@ -1,8 +1,9 @@
-function convertVttToJson(vttString) {
+function convertVttToJson(str) {
   return new Promise((resolve, reject) => {
   var current = {}
   var sections = []
   var start = false;
+  var vttString = str.trimEnd();
   var vttArray = vttString.split('\n');
    vttArray.forEach((line, index) => {
     if (line.replace(/<\/?[^>]+(>|$)/g, "") === " "){
@@ -29,10 +30,10 @@ function convertVttToJson(vttString) {
             if (current.part.length === 0) {
               current.part = line
             } else {
-              current.part = `${current.part}${line}`
+              current.part = `${current.part}\r${line}`
             }
             // If it's the last line of the subtitles
-            if (index === vttArray.length - 1) {
+            if (index + 1 === vttArray.length) {
               sections.push(clone(current))
             }
           }

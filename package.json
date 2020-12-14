@@ -1,6 +1,6 @@
 {
-  "name": "vtt-to-json",
-  "version": "1.0.0",
+  "name": "vtt-2-json",
+  "version": "1.1.0",
   "description": "Convert VTT file to JSON",
   "main": "index.js",
   "directories": {

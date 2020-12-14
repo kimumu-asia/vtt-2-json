@@ -1,4 +1,4 @@
-## vtt-to-json [![Build Status](https://travis-ci.org/joegesualdo/vtt-to-json.svg?branch=master)](https://travis-ci.org/joegesualdo/vtt-to-json)
+## vtt-2-json 
 > Convert [WebVTT file](https://developer.mozilla.org/en-US/docs/Web/API/Web_Video_Text_Tracks_Format) to JSON
 
 ## Install
@@ -34,7 +34,7 @@ $ npm test
 returns `Promise` that passed the vtt json value.
 
 ```javascript
-const vttToJson = require("vtt-to-json")
+const vttToJson = require("vtt-2-json")
 
 let vttString = '...';
 
