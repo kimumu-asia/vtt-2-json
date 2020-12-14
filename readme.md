@@ -3,12 +3,12 @@
 
 ## Install
 ```
-$ npm install --save vtt-to-json
+$ npm install --save vtt-2-json
 ```
 
 ## Usage
 ```javascript
-const vttToJson = require("vtt-to-json")
+const vttToJson = require("vtt-2-json")
 
 let vttString = '...';
 
@@ -45,4 +45,4 @@ vttToJson(vttString)
 ```
 
 ## License
-MIT © [Joe Gesualdo]()
+MIT © [Kim]()

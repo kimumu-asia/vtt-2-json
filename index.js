@@ -29,7 +29,7 @@ function convertVttToJson(vttString) {
             if (current.part.length === 0) {
               current.part = line
             } else {
-              current.part = `${current.part} ${line}`
+              current.part = `${current.part}${line}`
             }
             // If it's the last line of the subtitles
             if (index === vttArray.length - 1) {

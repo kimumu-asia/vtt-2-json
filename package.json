@@ -1,24 +1,31 @@
 {
   "name": "vtt-to-json",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Convert VTT file to JSON",
   "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "commander": "^6.2.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "mocha test.js"
   },
-  "repository": "joegesualdo/vtt-to-json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimumu-asia/vtt-2-json.git"
+  },
   "keywords": [
     "vtt",
     "json",
     "subtitles"
   ],
-  "author": {
-    "name": "Joe Gesualdo"
-  },
+  "author": "kim",
   "license": "MIT",
-  "devDependencies": {
-    "mocha": "*",
-    "chai": "*"
+  "bugs": {
+    "url": "https://github.com/kimumu-asia/vtt-2-json/issues"
   },
-  "dependencies": {}
+  "homepage": "https://github.com/kimumu-asia/vtt-2-json#readme"
 }
