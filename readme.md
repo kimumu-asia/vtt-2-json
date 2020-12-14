@@ -18,11 +18,6 @@ vttToJson(vttString)
 });
 ```
 
-## Test
-```
-$ npm test
-```
-
 ## API
 ### `vttToJson(vttString)`
 > What does this method do?
