@@ -12,7 +12,13 @@ function convertVttToJson(str) {
       start = true;
 
       if (current.start) {
-        sections.push(clone(current))
+        const c = clone(current)
+        const prevSection = sections[sections.length - 1]
+        if (prevSection.start === c.start && prevSection.end === c.end) {
+          prevSection.part = `${prevSection.part}\n${c.part}`
+        } else {
+          sections.push(clone(current))
+        }
       }
 
       current = {
@@ -30,7 +36,7 @@ function convertVttToJson(str) {
             if (current.part.length === 0) {
               current.part = line
             } else {
-              current.part = `${current.part}\r${line}`
+              current.part = `${current.part} ${line}`
             }
             // If it's the last line of the subtitles
             if (index + 1 === vttArray.length) {
