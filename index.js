@@ -87,6 +87,9 @@ function convertVttToJson(str) {
     section.words = resultsArray;
     section.part = section.part.replace(/<\/?[^>]+(>|$)/g, "")
   })
+    sections.forEach((section, index) => {
+      section.part = section.part.trimEnd()
+    })
     resolve(sections);
   })
 }
