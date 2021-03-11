@@ -11,7 +11,7 @@ function convertVttToJson(str) {
     } else if (line.indexOf('-->') !== -1 ) {
       start = true;
 
-      if (current.start) {
+      if (current.start === 0 || current.start) {
         const c = clone(current)
         const prevSection = sections[sections.length - 1]
         if (prevSection.start === c.start && prevSection.end === c.end) {
